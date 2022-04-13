@@ -1,0 +1,23 @@
+.header {
+    height: 88px;
+    width: 99%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background: #0B080D;
+    margin: 60px 20px;
+    line-height: 20px;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    font-size: 18px;
+ 
+}
+
+.drop {
+    background: #151316;
+    border:1px solid rgba(45, 44, 46, 0.81)
+}
+
