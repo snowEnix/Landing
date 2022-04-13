@@ -14,9 +14,8 @@
     padding: 20px;
 }
 
-.header last {
-    text-align: end;
-    color: red;
+.header button:last-child{
+    justify-content: end;
 }
 
 
