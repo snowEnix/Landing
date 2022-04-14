@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +9,38 @@
     <link rel="stylesheet" type="text/css" href="css-reset.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="/drop.js"></script>
     <title>Landing Practice</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__container">
-            <nav>
-                <img alt="logo warcraft icon" src="/assets/wow.png">
-                <span class="colored">warcraft</span>
-                <button > Stake</button>
-                <button> Docs</button>
-                <button>Smt token</button>
-                
-                <div class="dropdown">
-                <button > More <i class="fa fa-caret-down"></i></button> 
-                    <div class="dropdown-content">
-                        <p>Guide</p>
-                        <p>Docs</p>
-                        <p>Contact us</p>
-                    </div>
+    <header>
+        <nav>
+            <div class="navbar">
+               
+                <div class="logo_name"> <img alt="logo warcraft icon" src="/assets/wow.png" class="logo">
+                    WarCraft
                 </div>
 
-                <button class="last"> Bridge tokens</button>
-            </nav>
-    
-        </div>  
-    
+                <ul class="menu">
+                    <li class="menu__item"> <a href="#" class="menu__item-link">Stake</a></li>
+                    <li class="menu__item"> <a href="#" class="menu__item-link">Docs</a></li>
+                    <li class="menu__item"> <a href="#" class="menu__item-link">WarCraft token</a></li>
+                    <li class="menu__item">
+                        <a href="#" onclick="dropDown()" class="menu__item-link" >
+                            <div class="dropdown"> More <i class="fa fa-caret-down"></i>
+                                    <ul id="myDropdown" class="dropdown-content">
+                                        <li>Guide</li>
+                                        <li>Docs</li>
+                                        <li>Contact us</li>
+                                    </ul></div></a></li>
+                    <li class="menu__item"> <a href="#" class=" menu__item-link">Bridge tokens</a></li>         
+                </ul>
+
+            </div>
+
+        </nav>
     </header>
-    
 </body>
 </html>
