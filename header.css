@@ -31,8 +31,9 @@ nav {
 }
 
 .menu__item:last-child {
-  color:red;
   margin-left: auto;
+  border: 1px solid rgb(51, 211, 163);
+  border-radius: 4px;
 }
 
 .menu__item:hover {
