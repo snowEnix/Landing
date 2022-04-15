@@ -5,6 +5,7 @@ nav {
 .navbar {
   height: 88px;
   padding: 10px 60px;
+
 }
 
 .logo {
@@ -20,9 +21,7 @@ nav {
 
 .menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  
+
 }
 
 .menu__item {
@@ -32,19 +31,17 @@ nav {
   font-size: 14px;
   line-height: 24px;
   border: 1px solid transparent;
+   padding: 5px 20px;  
   user-select:none;
 }
 
-.menu a {
-  padding: 5px 20px; 
-}
 
 .menu__item-link:focus-visible {
   outline: 1px solid;
 }
 
 .menu__item:hover {
-  color: #33d3a3;
+  color: var(--hov-text);
 }
 
 .menu__item:last-child {
@@ -73,8 +70,8 @@ nav {
 
 .dropdown-content li:hover {
   font-weight: bold;
+  color: var(--hov-text);
 }
-
 
 .show {
   display: block;
@@ -82,4 +79,5 @@ nav {
 
 :root {
   --text-color: #ffffff;
+  --hov-text: #33d3a3;
 }
