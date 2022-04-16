@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Codec Cold Trial Light'), url('./assets/font/Codec-Cold-Light-trial.woff') format('woff');
-    }
+}
 
 .header {
     width: 100%;
@@ -25,6 +25,7 @@
     height: 30px;
     width: 30px;
 }
+
 .logo__name {
     color: #dac2c2;
     text-shadow: 4px 5px 5px #b96baf;
@@ -35,18 +36,12 @@
 .header__menu {
     padding: 0px 60px;
     width: 100%;
+
 }
 
 .menu__list {
- display: flex;
-}
-
-.menu__item:last-child {
-    border: 1px solid #33d3a3;
-    border-radius: 4px;
-    margin-left: auto;
-    text-align: center;
-    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .menu__item {
@@ -56,18 +51,28 @@
 .menu__item-link {
     font-family: 'Codec Cold Trial Light', sans-serif;
     color: rgb(255, 255, 255);
-    opacity: 0.8;
+   
     font-size: 14px;
     line-height: 24px;
-    user-select: none;  
+    user-select: none;
 }
+
+.menu__item:last-child {
+    border: 1px solid #33d3a3;
+    border-radius: 4px;
+    margin-left: auto;
+    text-align: center;
+    /* width: 150px; */
+}
+
 .menu__item-link:hover {
     color: var(--hov-text);
 }
 
-/* .menu__item-link:focus-visible {
-    outline: 1px solid;
-} */
+.menu__item-link:focus-visible {
+    outline: inherit;
+    color: var(--hov-text)
+}
 
 
 
@@ -93,12 +98,14 @@
 .dropdown-content li:hover {
     color: var(--hov-text);
 }
+
 .show {
     display: block;
 }
+
 /**************************************/
 
 :root {
     --text-color: #ffffff;
-    --hov-text: #33d3a3;
+    --hov-text: #a3af31;
 }
