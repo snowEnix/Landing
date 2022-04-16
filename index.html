@@ -7,40 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="css-reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <script src="/drop.js"></script>
+    <script src="/scripts.js"></script>
     <title>Landing Practice</title>
 </head>
-
 <body>
-    <header class="header">
-        
+    <header class="header">       
         <div class="header__container">
+  <!-- hamburger -->
+            <div class="header__burger">
+                <div id="burger"  onclick="burger()">
+                    <svg class="burger icon-btn__fill" viewBox="0 0 21 21 ">
+                        <rect  class="burger__rect burger__rect--one" width="21" rx="0.5" ry="0.5" height="1" x="0" y="3" stroke-linecap="round"></rect>
+                        <rect class="burger__rect burger__rect--two" width="21" rx="0.5" ry="0.5" height="1" x="0" y="10" stroke-linecap="round"></rect>
+                        <rect class="burger__rect burger__rect--three" width="21" rx="0.5" ry="0.5" height="1" x="0" y="17" stroke-linecap="round"></rect>
+                    </svg>
+                </div>
+            </div>
+  <!-- logo -->
             <div class="logo__name">
             <img alt="logo warcraft icon" src="/assets/logo/wow.png" class="logo">
-            WarCraft</div> 
-        <nav class="header__menu">
-     
+            <span>WarCraft</span></div> 
+    <!-- nav -->          
+        <nav class="header__menu">  
                 <ul class="menu__list">
                     <li class="menu__item"> <a href="#" class="menu__item-link">Stake</a></li>
                     <li class="menu__item"> <a href="#" class="menu__item-link">Docs</a></li>
                     <li class="menu__item"> <a href="#" class="menu__item-link">WarCraft token</a></li>
-                    <li class="menu__item"> <a href="#" onclick="dropDown()" class="menu__item-link">
-                        More <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L4 4L7 1" stroke="white"/>
-                          </svg>
+                    <li class="menu__item"> <a href="#" onclick="dropDown()" class="menu__item-link">More
+                        <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4 4L7 1" stroke="white"/></svg> 
                           <ul id="myDropdown" class="dropdown-content">
                             <li>Guide</li>
                             <li>Docs</li>
                             <li>Contact us</li>
                           </ul>
-                    </a></li>
-                    <li class="menu__item"> <a href="#" class=" menu__item-link">Bridge tokens</a></li>         
-                </ul>             
+                        </a></li>
+                </ul>  
         </nav>
+        <div class="header__button"> <button class="txt-btn">Bridge tokens</button></div>       
         </div>
-     
     </header>
 </body>
 </html>
