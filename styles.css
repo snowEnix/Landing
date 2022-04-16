@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Codec Cold Trial Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Codec Cold Trial Light'), url('./assets/font/Codec-Cold-Light-trial.woff') format('woff');
+    }
+
 .header {
     width: 100%;
     position: absolute;
@@ -38,7 +45,8 @@
     border: 1px solid #33d3a3;
     border-radius: 4px;
     margin-left: auto;
-  
+    text-align: center;
+    width: 150px;
 }
 
 .menu__item {
@@ -46,25 +54,24 @@
 }
 
 .menu__item-link {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Codec Cold Trial Light', sans-serif;
     color: rgb(255, 255, 255);
     opacity: 0.8;
     font-size: 14px;
     line-height: 24px;
-    user-select: none; 
-    /* border: 1px solid transparent;*/
- 
+    user-select: none;  
 }
-
+.menu__item-link:hover {
+    color: var(--hov-text);
+}
 
 /* .menu__item-link:focus-visible {
     outline: 1px solid;
 } */
 
-.menu__item-link:hover {
-    color: var(--hov-text);
-}
 
+
+/********************* DROPDOWN*****************/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -86,19 +93,10 @@
 .dropdown-content li:hover {
     color: var(--hov-text);
 }
-
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
 .show {
     display: block;
 }
+/**************************************/
 
 :root {
     --text-color: #ffffff;
