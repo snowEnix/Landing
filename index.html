@@ -10,42 +10,55 @@
     <script src="/scripts.js"></script>
     <title>Landing Practice</title>
 </head>
+
 <body>
-    <header class="header">       
+    <header class="header">
         <div class="header__container">
-  <!-- hamburger -->
+            <!-- hamburger -->
             <div class="header__burger">
-                <button id="burger"  onclick="burger()">
+                <div id="burger" onclick="burger()">
                     <svg class="burger icon-btn__fill" viewBox="0 0 21 21 ">
-                        <rect  class="burger__rect burger__rect--one" width="21" rx="0.5" ry="0.5" height="1" x="0" y="3" stroke-linecap="round"></rect>
-                        <rect class="burger__rect burger__rect--two" width="21" rx="0.5" ry="0.5" height="1" x="0" y="10" stroke-linecap="round"></rect>
-                        <rect class="burger__rect burger__rect--three" width="21" rx="0.5" ry="0.5" height="1" x="0" y="17" stroke-linecap="round"></rect>
+                        <rect class="burger__rect burger__rect--one" width="21" rx="0.5" ry="0.5" height="1" x="0" y="3"
+                            stroke-linecap="round"></rect>
+                        <rect class="burger__rect burger__rect--two" width="21" rx="0.5" ry="0.5" height="1" x="0"
+                            y="10" stroke-linecap="round"></rect>
+                        <rect class="burger__rect burger__rect--three" width="21" rx="0.5" ry="0.5" height="1" x="0"
+                            y="17" stroke-linecap="round"></rect>
                     </svg>
-                </button>
+                </div>
             </div>
-  <!-- logo -->
+            <!-- logo -->
             <div class="logo__name">
-            <img alt="logo warcraft icon" src="/assets/logo/wow.png" class="logo">
-            <span>WarCraft</span></div> 
-    <!-- nav -->          
-        <nav class="header__menu">  
-                <ul class="menu__list">
+                <img alt="logo warcraft icon" src="/assets/logo/wow.png" class="logo">
+                <span>WarCraft</span>
+            </div>
+            <!-- nav -->
+            <nav class="menu">
+                <ul id="menu" class="menu__list">
                     <li class="menu__item"> <a href="#" class="menu__item-link">Stake</a></li>
                     <li class="menu__item"> <a href="#" class="menu__item-link">Docs</a></li>
                     <li class="menu__item"> <a href="#" class="menu__item-link">WarCraft token</a></li>
-                    <li class="menu__item"> <a href="#" onclick="dropDown()" class="menu__item-link">More
-                        <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L4 4L7 1" stroke="white"/></svg> 
-                          <ul id="myDropdown" class="dropdown-content">
-                            <li>Guide</li>
-                            <li>Docs</li>
-                            <li>Contact us</li>
-                          </ul>
-                        </a></li>
-                </ul>  
-        </nav>
-        <div class="header__button"> <button class="txt-btn">Bridge tokens</button></div>       
+                    <li class="menu__item">
+                        <div class="submenu">
+                            <button class="menu__item-link" onclick="dropDown()">More
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L4 4L7 1" stroke="white" />
+                                </svg>
+                            </button>
+                            <ul id="myDropdown" class="dropdown-content">
+                                <li> <a href="#" class="menu__item-link">Guide</a></li>
+                                <li> <a href="#" class="menu__item-link">Docs</a></li>
+                                <li> <a href="#" class="menu__item-link">Contact us</a></li>
+                            </ul>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="header__button txt-btn">Bridge tokens</a>
         </div>
     </header>
 </body>
+
 </html>

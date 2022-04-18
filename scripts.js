@@ -18,5 +18,5 @@ window.onclick = (event) => {
 
 burger = () => {
   document.getElementById ("burger").classList.toggle("active");
-  document.getElementById ("burger").classList.toggle("shadow");
+  document.getElementById ("menu").classList.toggle("open");
 }
