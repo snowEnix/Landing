@@ -18,5 +18,17 @@ window.onclick = (event) => {
 
 burger = () => {
   document.getElementById ("burger").classList.toggle("active");
-  document.getElementById ("menu").classList.toggle("open");
+  document.getElementById ("menu").classList.toggle("menu--open");
 }
+
+window.addEventListener ('resize', function () {
+  if (window.innerWidth < 1100) {
+    document.getElementById ("header").classList.add("header--small");
+    document.getElementById ("submenu").classList.add("submenu--small");
+  } 
+  else if (window.innerWidth > 1100) {
+      document.getElementById ("header").classList.remove ("header--small");
+      document.getElementById ("submenu").classList.remove("submenu--small");
+  }
+})
+

@@ -12,41 +12,39 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
+    <header class="header" id="header">
+        <div class="header__container wrapper">
             <!-- hamburger -->
-            <div class="header__burger">
-                <div id="burger" onclick="burger()">
-                    <svg class="burger icon-btn__fill" viewBox="0 0 21 21 ">
-                        <rect class="burger__rect burger__rect--one" width="21" rx="0.5" ry="0.5" height="1" x="0" y="3"
-                            stroke-linecap="round"></rect>
-                        <rect class="burger__rect burger__rect--two" width="21" rx="0.5" ry="0.5" height="1" x="0"
-                            y="10" stroke-linecap="round"></rect>
-                        <rect class="burger__rect burger__rect--three" width="21" rx="0.5" ry="0.5" height="1" x="0"
-                            y="17" stroke-linecap="round"></rect>
-                    </svg>
-                </div>
-            </div>
+            <button class="burger-btn" id="burger" onclick="burger()">
+                <svg class="burger icon-btn__fill" viewBox="0 0 21 21 ">
+                    <rect class="burger__rect burger__rect--one" width="21" rx="0.5" ry="0.5" height="1" x="0" y="3"
+                        stroke-linecap="round"></rect>
+                    <rect class="burger__rect burger__rect--two" width="21" rx="0.5" ry="0.5" height="1" x="0" y="10"
+                        stroke-linecap="round"></rect>
+                    <rect class="burger__rect burger__rect--three" width="21" rx="0.5" ry="0.5" height="1" x="0" y="17"
+                        stroke-linecap="round"></rect>
+                </svg>
+            </button>
             <!-- logo -->
             <div class="logo__name">
                 <img alt="logo warcraft icon" src="/assets/logo/wow.png" class="logo">
                 <span>WarCraft</span>
             </div>
             <!-- nav -->
-            <nav class="menu">
-                <ul id="menu" class="menu__list">
+            <nav id="menu" class="menu">
+                <ul class="menu__list">
                     <li class="menu__item"> <a href="#" class="menu__item-link">Stake</a></li>
                     <li class="menu__item"> <a href="#" class="menu__item-link">Docs</a></li>
                     <li class="menu__item"> <a href="#" class="menu__item-link">WarCraft token</a></li>
                     <li class="menu__item">
-                        <div class="submenu">
-                            <button class="menu__item-link" onclick="dropDown()">More
+                        <div class="submenu" id="submenu">
+                            <button class="dropdown__btn  menu__item-link" onclick="dropDown()">More
                                 <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1L4 4L7 1" stroke="white" />
                                 </svg>
                             </button>
-                            <ul id="myDropdown" class="dropdown-content">
+                            <ul id="myDropdown" class="dropdown dropdown-content">
                                 <li> <a href="#" class="menu__item-link">Guide</a></li>
                                 <li> <a href="#" class="menu__item-link">Docs</a></li>
                                 <li> <a href="#" class="menu__item-link">Contact us</a></li>
@@ -59,6 +57,7 @@
             <a href="#" class="header__button txt-btn">Bridge tokens</a>
         </div>
     </header>
+
 </body>
 
 </html>
