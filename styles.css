@@ -52,7 +52,7 @@
 
 .active {
     display: block;
-    position: absolute;
+   
 }
 
 .active .burger__rect--one {
@@ -84,6 +84,7 @@
 }
 
 .menu {
+    margin: 2px;
 }
 
 .header__button {
