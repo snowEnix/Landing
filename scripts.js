@@ -21,14 +21,26 @@ burger = () => {
   document.getElementById ("menu").classList.toggle("menu--open");
 }
 
-window.addEventListener ('resize', function () {
-  if (window.innerWidth < 1100) {
-    document.getElementById ("header").classList.add("header--small");
-    document.getElementById ("submenu").classList.add("submenu--small");
-  } 
-  else if (window.innerWidth > 1100) {
-      document.getElementById ("header").classList.remove ("header--small");
-      document.getElementById ("submenu").classList.remove("submenu--small");
-  }
-})
+// window.addEventListener ('resize', function () {
+//   if (window.innerWidth < 1100) {
+//     document.getElementById ("header").classList.add("header--small");
+//     document.getElementById ("submenu").classList.add("submenu--small");
+//   } 
+//   else if (window.innerWidth > 1100) {
+//       document.getElementById ("header").classList.remove ("header--small");
+//       document.getElementById ("submenu").classList.remove("submenu--small");
+//   }
+// })
 
+
+
+windowSize = () => {
+  if ($(window).width() < 1100) {
+    document.getElementById ("header").classList.add("header--small");
+    document.getElementById ("submenu").classList.add("submenu--small")
+  } else {
+    document.getElementById ("header").classList.remove ("header--small");
+    document.getElementById ("submenu").classList.remove("submenu--small");
+  }
+  }
+  $(window).on('load resize',windowSize);
